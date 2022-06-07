@@ -63,5 +63,5 @@
   int reverse();
 
   - 17: Returns True if Integer is equals to reference Integer<br>
-  bool equals(int value);
+  bool equals(int value);<br>
   bool equals(string value);
