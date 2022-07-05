@@ -1,4 +1,4 @@
-#include "Integer.hh"
+#include "../Integer.hh"
 
 int main()
 {
