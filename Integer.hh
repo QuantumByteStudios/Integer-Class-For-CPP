@@ -12,6 +12,12 @@
 #endif
 using namespace std;
 
+// Color Codes
+// From: https://github.com/QuantumByteStudios/curses/
+#define RESET "\033[0m"
+#define RED "\033[31m"   /* Red */
+#define GREEN "\033[32m" /* Green */
+
 class Main
 {
 public:
@@ -38,8 +44,12 @@ public:
 
 class Integer
 {
-public:
+private:
   int Value;
+
+public:
+  int min = 0, max = 0;
+
   Integer()
   {
     Value = 0;
@@ -47,6 +57,36 @@ public:
   Integer(int num)
   {
     Value = num;
+  }
+
+  void checkMinMax(int num)
+  {
+    if (num >= min && num <= max)
+    {
+      Value = num;
+    }
+    else
+    {
+      cout << RED << "Min-Max Error" << RESET << ", " << GREEN << "Detected Unacceptable Value: " << num << RESET << endl;
+      Value = 0;
+    }
+  }
+
+  // Min & Max
+  void setMin(int min)
+  {
+    this->min = min;
+  }
+
+  void setMax(int max)
+  {
+    this->max = max;
+  }
+
+  void setMinMax(int min, int max)
+  {
+    this->min = min;
+    this->max = max;
   }
 
   // 1: toString
@@ -69,17 +109,20 @@ public:
   {
     return Value;
   }
+
   int getValue()
   {
     return Value;
   }
+
   void printValue()
   {
-    cout << Value;
+    cout << Value << endl;
   }
+
   void setValue(int num)
   {
-    Value = num;
+    checkMinMax(num);
   }
 
   // 6: floatValue
