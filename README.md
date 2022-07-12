@@ -20,7 +20,7 @@ v 1.14 <br>+ Added Min-Max Function
 - You can use `setMin(int min);` & `setMax(int max);` functions seperately.
 <br><br>
 Here's and Example:<br>
-<a href="src/usageExample.cpp">Click Here</a> For Program Code Shown in the image below.
+<a href="src/min-maxExample.cpp">Click Here</a> For Program Code Shown in the image below.
 <p align="center">
   <img src="src/min-max.png" alt="Logo">
 </p>
