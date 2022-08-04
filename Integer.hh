@@ -1,3 +1,7 @@
+// Header Guards
+#ifndef _INTEGER_CLASS
+#define _INTEGER_CLASS
+// Headers
 #include <iostream>
 #include <stdlib.h>
 #include <iomanip>
@@ -248,3 +252,4 @@ public:
     return false;
   }
 };
+#endif
