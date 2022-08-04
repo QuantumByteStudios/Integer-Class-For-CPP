@@ -40,6 +40,10 @@ public:
   {
     cout << stRing;
   }
+  void print(string stRing, string COLOR)
+  {
+    cout << COLOR << stRing << RESET;
+  }
 } me;
 
 class Integer
