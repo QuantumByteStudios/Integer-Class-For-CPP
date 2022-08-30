@@ -16,7 +16,7 @@
 v 1.14 <br>+ Added Min-Max Function
 </b>
 
-- Min-Max that is  `setMinMax(int min, int max);` function helps you to set minimum & maximum for an integre variable.
+- Min-Max that is  `setMinMax(int min, int max);` function helps you to set minimum & maximum for an integer variable.
 - You can use `setMin(int min);` & `setMax(int max);` functions seperately.
 <br><br>
 Here's and Example:<br>
